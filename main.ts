@@ -1,8 +1,12 @@
-let Light = input.lightLevel()
+pause(1000)
+light.setAll(0xffffff)
+light.setBrightness(255)
+pause(1000)
+light.setBrightness(0)
 forever(function () {
-    if (input.lightLevel() > 2 * Light) {
-        light.setAll(0xffffff)
-        light.setBrightness(255)
-        pause(120000)
-    }
+    pause(1500)
+    light.setBrightness(255)
+    pause(600)
+    light.setBrightness(0)
+    pause(1500)
 })
